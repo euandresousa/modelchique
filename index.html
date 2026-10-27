@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Chique | Roupas e acessórios</title>
+  <meta name="description" content="Roupas e acessórios na Model Chique. Escolha suas peças e peça pelo WhatsApp.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Model Chique</h1>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a class="botao botao-menu" data-whats="Olá! Vim pelo site da Model Chique." href="#contato" target="_blank">WhatsApp</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>Moda e acessórios para o seu estilo</h2>
+    <p>Escolha suas peças aqui no site e finalize o pedido pelo WhatsApp.</p>
+    <a class="botao" href="#produtos">Ver produtos</a>
+  </section>
+
+  <main>
+
+    <section id="produtos">
+      <h2>Nossos produtos</h2>
+
+      <div class="filtros">
+        <button class="filtro ativo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="roupas">Roupas</button>
+        <button class="filtro" data-filtro="acessorios">Acessórios</button>
+      </div>
+
+      <div class="lista-produtos">
+
+        <article data-categoria="roupas">
+          <img src="imagens/Roupas.masculinas.jpg" alt="Roupas masculinas">
+          <h3>Roupas masculinas</h3>
+          <p>R$ 120,00</p>
+          <a class="botao" data-whats="Olá! Tenho interesse nas roupas masculinas." href="#contato" target="_blank">Pedir pelo WhatsApp</a>
+        </article>
+
+        <article data-categoria="acessorios">
+          <img src="imagens/Acessorios.jpg" alt="Acessórios">
+          <h3>Acessórios</h3>
+          <p>R$ 80,00</p>
+          <a class="botao" data-whats="Olá! Tenho interesse nos acessórios." href="#contato" target="_blank">Pedir pelo WhatsApp</a>
+        </article>
+
+        <article data-categoria="roupas">
+          <img src="imagens/Roupas.Femininas.jpg" alt="Roupas femininas">
+          <h3>Roupas femininas</h3>
+          <p>R$ 150,00</p>
+          <a class="botao" data-whats="Olá! Tenho interesse nas roupas femininas." href="#contato" target="_blank">Pedir pelo WhatsApp</a>
+        </article>
+
+        <article data-categoria="roupas">
+          <img src="imagens/Roupas.infantis.jpg" alt="Roupas infantis">
+          <h3>Roupas infantis</h3>
+          <p>R$ 60,00</p>
+          <a class="botao" data-whats="Olá! Tenho interesse nas roupas infantis." href="#contato" target="_blank">Pedir pelo WhatsApp</a>
+        </article>
+
+        <!--
+          PARA ADICIONAR UM PRODUTO NOVO: copie um bloco <article> inteiro,
+          cole aqui e troque a foto, o nome, o preço e a mensagem do WhatsApp.
+          Em data-categoria use "roupas" ou "acessorios".
+        -->
+
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre a Model Chique</h2>
+      <p>Escreva aqui em 2 ou 3 frases como a loja começou, o que vocês vendem e o que torna a loja especial.</p>
+    </section>
+
+  </main>
+
+  <footer id="contato">
+    <h2>Contato</h2>
+    <p>Endereço: escreva aqui o endereço da loja</p>
+    <p>E-mail: seuemail@exemplo.com</p>
+    <p>WhatsApp: (00) 00000-0000</p>
+    <p>Instagram: @suaconta</p>
+    <p class="direitos">&copy; 2026 Model Chique. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
